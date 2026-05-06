@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+    <title>formularios</title>
+  </head>
+  <body>
+    <header>
+      <h1>pizzeria ETEC</h1>
+      <p>Inicie su pedido online</p>
+    </header>
+    <main>
+      <form>
+        <!--Formulario nos sirve para enviar datos-->
+        <section>
+          <h2>Datos del cliente</h2>
+          <label for="nombre">Nombre</label>
+          <!--el tipe nos indica lo que podemos ingresar en el input-->
+          <input type="text" id="nombre" name="nombre" />
+          <label for="direccion">Dirección</label>
+          <input type="text" id="direccion" name="direccion" />
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" />
+          <label for="telefono">Telefono</label>
+          <input type="text" id="telefono" name="telefono" />
+        </section>
+        <section>
+          <h3>Tamaño:</h3>
+          <input type="radio" id="chica" name="tamaño" value="chica"/>
+          <label for="chica">Chica</label>
+          <input type="radio" id="grande" name="tamaño" value="grande"/>
+          <label for="grande">Grande</label>
+        </section>
+        <section>
+            <h3>Ingredientes</h3>
+            <label for="jamon">Jamon</label>
+            <input type="checkbox" id="jamon" name="ingredeinteJamon" value="jamon"/>
+            <label for="tomate">Tomate</label>
+            <input type="checkbox" id="tomate" name="ingredeinteTomate" value="tomate"/>
+        </section>
+        <section>
+            <label for="masa">tipo de Masa</label>
+            <select id="masa" name="masa">
+            <option value="delgada">Delgada</option>
+            <option value="gruesa">Gruesa</option>
+            <option value="integral">Integral</option>
+            </select>
+        </section>
+        <h2>Comentarios</h2>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="30"></textarea required>
+
+        <!--siempre que haya un formulario vamos a tener un boton tipo submit-->
+        <button type="submit">Enviar pedido</button>
+      </form>
+    </main>
+  </body>
+</html>
